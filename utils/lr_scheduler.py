@@ -21,11 +21,11 @@ class LearningRateScheduler(Callback):
         print("\nEpoch %05d: Learning rate is %6.4f." % (epoch, scheduled_lr))
 
 
-# LR_SCHEDULE = [
-#     (0, 0.01),
-#     (75, 0.001),
-#     (105, 0.0001)
-# ]
+LR_SCHEDULE = [
+    (0, 0.01),
+    (75, 0.001),
+    (105, 0.0001)
+]
 
 def lr_schedule(epoch, lr):
     """Helper function to retrieve the scheduled learning rate based on epoch."""
