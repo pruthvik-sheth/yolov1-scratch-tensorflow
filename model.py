@@ -72,6 +72,6 @@ if __name__ == "__main__":
     model.add(Dense(512))
     model.add(Dense(1024))
     model.add(Dropout(0.5))
-    model.add(Dense(490, activation = "sigmoid"))
-    model.add(YoloReshapeLayer(target_shape = (7, 7, 10)))
+    model.add(Dense(735, activation = "sigmoid"))
+    model.add(YoloReshapeLayer(target_shape = (7, 7, 15)))
     print(model.summary())
